@@ -1,0 +1,46 @@
+:root {
+  /* Colores principales de Kushki */
+  --color-primary: #00A0E4;
+  --color-primary-dark: #0082B9;
+  --color-primary-light: #33B3E9;
+  
+  /* Colores de texto */
+  --color-text-primary: #1F2937;
+  --color-text-secondary: #6B7280;
+  --color-text-light: #9CA3AF;
+  
+  /* Colores de fondo */
+  --bg-light: #F3F4F6;
+  --bg-white: #FFFFFF;
+  
+  /* Colores de estado */
+  --error-color: #EF4444;
+  --success-color: #10B981;
+  --warning-color: #F59E0B;
+  
+  /* Estilos de componentes */
+  --border-radius: 0.5rem;
+  --box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  
+  /* Variables específicas de Kushki */
+  --kushki-blue: #00A0E4;
+  --kushki-dark-blue: #0082B9;
+  --kushki-light-blue: #33B3E9;
+}
+
+/* Clases de utilidad */
+.form-label {
+  @apply block text-sm font-medium text-gray-700;
+}
+
+.input-field {
+  @apply appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-kushki-blue focus:border-kushki-blue text-gray-900;
+}
+
+.btn-primary {
+  @apply bg-kushki-blue text-white hover:bg-blue-700 focus:ring-2 focus:ring-offset-2 focus:ring-kushki-blue;
+}
+
+.btn-secondary {
+  @apply bg-white text-gray-700 hover:bg-gray-50 focus:ring-2 focus:ring-offset-2 focus:ring-kushki-blue;
+} 

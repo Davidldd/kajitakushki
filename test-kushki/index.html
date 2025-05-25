@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal Web - Kushki</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Polyfill para variable global -->
+    <script>
+      if (global === undefined) {
+        var global = window;
+      }
+    </script>
+    <script 
+    src="https://cdn.kushkipagos.com/kushki-checkout.js" 
+    onerror="console.error('Error al cargar KushkiCheckout')"
+  ></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
